@@ -38,6 +38,13 @@
     text-align: justify;
     margin: 0.7rem 0 0 0;
 }
+.work4Desc {
+    font-weight: 400;
+    font-size: 1rem;
+    width: 50rem;
+    text-align: justify;
+    margin: 0.7rem 0 0 0;
+}
 
 .worksImgs {
     /* background-color: rgb(171, 172, 172); */
@@ -52,6 +59,7 @@
 .worksImg {
     height: 10.6rem;
     width: 12rem;
+    background-color: rgb(0, 0, 0);
     margin: 0rem 1rem 0rem 1rem;
     /* top, right, bottom, left*/
     border-radius: 1rem;
@@ -68,6 +76,11 @@
     /* background-color: rgb(151, 152, 153); */
 }
 .work3 {
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(109, 110, 111); */
+}
+.work4 {
     display: flex;
     flex-direction: row;
     /* background-color: rgb(109, 110, 111); */

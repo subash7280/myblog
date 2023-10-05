@@ -42,11 +42,21 @@ const Contact = () => {
                     <button type='submit' value='Send' className="submitBtn">Submit</button>
                 </form>
                 <div className="links">
-                    <img src={FaceBookIcon} alt="FaceBook" className="link" />
-                    <img src={InstaGramIcon} alt="InstaGram" className="link" />
-                    <img src={TwitterIcon} alt="Twitter" className="link" />
-                    <img src={LinkedInIcon} alt="LinkedIn" className="link" />
-                    <img src={GitHubIcon} alt="GitHub" className="link" />
+                    <a href="" target='blank' >
+                        <img src={FaceBookIcon} alt="FaceBook" className="link" />
+                    </a>
+                    <a href="" target='blank' >
+                        <img src={InstaGramIcon} alt="InstaGram" className="link" />
+                    </a>
+                    <a href="" target='blank' >
+                        <img src={TwitterIcon} alt="Twitter" className="link" />
+                    </a>
+                    <a href="" target='blank' >
+                        <img src={LinkedInIcon} alt="LinkedIn" className="link" />
+                    </a>
+                    <a href="" target='blank' >
+                        <img src={GitHubIcon} alt="GitHub" className="link" />
+                    </a>
                 </div>
             </div>
         </section>

@@ -4,16 +4,16 @@ import {Link} from 'react-scroll';
 // import logo from '../../assets/logo3.png';
 // import logo from '../../assets/logo7.png';
 import logo from '../../assets/logo9.png';
-import contactImage from '../../assets/contact.png';
+// import contactImage from '../../assets/contact.png';
 import Menu from '../../assets/menu.png';
 import './NavigationBar.css';
 
 const NavigationBar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-  const gotoContact = () => {
-    document.getElementById('contact').scrollIntoView({behavior : 'smooth'});
-  };
+  // const gotoContact = () => {
+  //   document.getElementById('contact').scrollIntoView({behavior : 'smooth'});
+  // };
 
   return (
     <div>
@@ -27,9 +27,11 @@ const NavigationBar = () => {
             <Link className="desktopMenuListItem">Skills</Link>
             <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-155} duration={500} className="desktopMenuListItem">Contact</Link>
         </div>
-        <button className="desktopMenuBtn" onClick={() => gotoContact()} >
+
+        <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-155} duration={500} className="desktopMenuBtn">Contact</Link>
+        {/* <Link><button className="desktopMenuBtn" to='homepage' smooth={true} offset={-100} duration={500} >
           <img src={contactImage} alt="" className="desktopMenuImg" />Ping Me
-        </button>
+        </button></Link> */}
         
         <img src={Menu} alt="Menu"  className='mobMenu' onClick={() => setShowMenu(!showMenu)} />
         <div className="navMenu" style={{display : showMenu ? 'flex' : 'none'}}>
