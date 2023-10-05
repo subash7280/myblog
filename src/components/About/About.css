@@ -1,0 +1,103 @@
+#skills {
+    overflow: hidden;
+    width: 200w;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: -7rem 0rem 0rem 7rem;
+    /* background-color: rgb(60, 61, 61); */
+}
+
+.skillTitle {
+    font-size: 1.8rem;
+    color: rgb(205, 244, 231);
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: -1rem;
+}
+
+.educationTitle {
+    font-size: 1.7rem;
+    color: rgb(205, 244, 231);
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-left: 16rem;
+    margin-bottom: -1rem;
+}
+
+.skillDesc {
+    font-weight: 400;
+    font-size: 1.2rem;
+    max-width: 60rem;
+    padding: 0 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.skillBars {
+    /* background-color: rgba(240, 248, 255, 0.684); */
+    margin: 0.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+}
+
+.skillBar {
+    display: flex;
+    margin: 0.8rem;
+    padding: 0.95rem 2rem;
+    border-radius: 0.7rem;
+    background: rgb(105, 104, 104);
+}
+
+.skillBarText {
+    /* background-color: rgb(0, 0, 0); */
+    /* color: aliceblue; */
+    width: 70rem;
+}
+
+.instituteLogo {
+    height: 4rem;
+    margin-top: 0.8rem;
+    margin-right: 1.9rem;
+}
+
+.yearPassed {
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.instituteName {
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.degreeName {
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.locationName {
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (max-width:720px) {
+    .skillBarText>p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .skillBarText>p {
+        font-size: 3vw;
+    }
+    .instituteLogo {
+        height: 2.25rem;
+    }
+    .skillBarText>h4 {
+        font-size: 5vw;
+    }
+}
