@@ -30,7 +30,7 @@ const NavigationBar = () => {
         <button className="desktopMenuBtn" onClick={() => gotoContact()} >
           <img src={contactImage} alt="" className="desktopMenuImg" />Ping Me
         </button>
-        {/*  */}
+        
         <img src={Menu} alt="Menu"  className='mobMenu' onClick={() => setShowMenu(!showMenu)} />
         <div className="navMenu" style={{display : showMenu ? 'flex' : 'none'}}>
             <Link activeClass='active' to='homepage' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={() => setShowMenu(false)} >Home</Link>
