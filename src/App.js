@@ -4,6 +4,8 @@ import About from "./components/About/About";
 import Extras from "./components/Extras/Extras";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
   
@@ -15,6 +17,7 @@ const App = () => {
       <Extras />
       <Contact />
       <Footer />
+      <ToastContainer />
     </div>
   );
 };

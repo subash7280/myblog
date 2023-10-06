@@ -17,7 +17,7 @@ const HomePage = () => {
             <h2 className="introPara">Now, Come have a <span className='webSight' >Web-Sight</span></h2>
             <abbr title="Not Yet Fired"><Link><button className="btn" disabled ><img src={btnImg} alt="" className='btnImg' />Hire me!</button></Link></abbr>
         </div>
-        <img src={background} alt="Profile Image" className="bg" />
+        {/* <img src={background} alt="Profile Image" className="bg" /> */}
     </section>
   );
 };
