@@ -16,7 +16,7 @@ const Extras = () => {
                         <b>HOME AUTOMATION SYSTEM</b> - This proposed sytem presents the overall design of Home Automation System (HAS) with low cost and wireless system. It specifically focuses on the development of an IoT based system, that is able to control various components via internet or be automatically programmed to operate from ambient conditions. Node MCU is used to execute the process of automation. This system is design to assist and provide support for the elderly or disabled people.
                     </div>
                     <div id='workImages' className='work1Img' >
-                        <a href="">
+                        <a href="" target='blank' >
                             <img src={homeAutomation} alt="" className='worksImg' />
                         </a>
                     </div>
@@ -24,7 +24,7 @@ const Extras = () => {
 
                 <div className='work2' >
                     <div id='workImages' className='work2Img' >
-                        <a href="">
+                        <a href="" target='blank' >
                             <img src={fireManagementSystem} alt="" className='worksImg' />
                         </a>
                     </div>
@@ -38,7 +38,7 @@ const Extras = () => {
                         <b>COVID 19 PREDICTION</b> - Machine Learning methods can play vital roles in identifying COVID-19 patients by visually analyzing their chest x-ray images. In this project, a new ML-method proposed to clarify the chest x-ray images into COvid and NON-COVID person. One of the main challenges in the pandemic crisis is to identify and monitor the patients efficiently. The CNN algorithm is used, that is designed for image recognition and classification tasks. It takes images as inputs, extracts and learns the features of the image, and lassifies them based on the learned features.
                     </div>
                     <div id='workImages' className='work3Img' >
-                        <a href="">
+                        <a href="" target='blank' >
                             <img src={covid19} alt="" className='worksImg' />
                         </a>
                     </div>
@@ -46,7 +46,7 @@ const Extras = () => {
 
                 <div className='work4' >
                     <div id='workImages' className='work4Img' >
-                        <a href="">
+                        <a href="" target='blank' >
                             <img src={gmailIcon} alt="" className='worksImg' />
                         </a>
                     </div>

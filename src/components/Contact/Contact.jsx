@@ -15,8 +15,7 @@ const Contact = () => {
         from_name : '',
         message : '',
     });
-    // console.log(formData);
-    const [formSubmitted, setFormSubmitted] = useState(false);
+    // console.log(formData);]
 
     // Handle input changes
     const onChange = (event) => {
@@ -33,53 +32,62 @@ const Contact = () => {
 
         if(!your_name && !from_name && !message) {
             toast.error("Give the valid details.");
+            return ifWrong = true;
         }
         else {
             if(!your_name) {
                 toast.error("Name Is Required.");
+                return ifWrong = true;
             }
             else if(your_name.length < 5) {
-                toast.error("Invalid Name.");
+                toast.error("Name Should Be Minimum Of 5 Letters.");
+                return ifWrong = true;
             }
             else if(!from_name) {
                 toast.error("Email is required.");
+                return ifWrong = true;
             }
             else if(!validateEmail(from_name)) {
                 toast.error("Invalid Email Format.");
+                return ifWrong = true;
             }
             else if(!message) {
                 toast.error("Message is required.");
+                return ifWrong = true;
             }
             else if(message.length < 10) {
                 toast.error("Message Length Is Not Enough.");
+                return ifWrong = true;
             };
         };
 
-        if(ifWrong) {
-            const submitBtn = document.getElementById('submitBtn');
-            submitBtn.style.cursor = 'none';
-        };
-
-        try {
-            const response = await emailjs.sendForm(
-                'service_nfrbso7',
-                'template_iibs2w9',
-                form.current,
-                'aDTigHfI0x66h_Nve'
-            );
-
-            if (response.status === 200) {
-                toast.success("Mail Sent Successfully.");
-                e.target.reset();
-                // setFormSubmitted(true);
+        if(!ifWrong) {
+            try {
+                const response = await emailjs.sendForm(
+                    'service_nfrbso7',
+                    'template_iibs2w9',
+                    form.current,
+                    'aDTigHfI0x66h_Nve'
+                );
+                console.log("----->", response);
+    
+                if (response.status === 200) {
+                    toast.success("Mail Sent.");
+                    e.target.reset();
+                    setFormData({
+                        your_name : '',
+                        from_name : '',
+                        message : '',
+                    });
+                }
+                else {
+                    toast.error("Mail did not sent.");
+                };
             }
-            else {
-                toast.error("Mail did not sent.");
+            catch (error) {
+                toast.error("Mail did not sentttt.");
+                console.error("Error:", error);
             };
-        }
-        catch (error) {
-            toast.error("Mail did not sentttt.");
-            console.error("Error:", error);
         };
     
         // const response = await 
@@ -93,13 +101,6 @@ const Contact = () => {
         //             console.log("error",error);
         //             console.log("error.text",error.text);
         //         });
-        //! response :-
-        // status: 200
-        // text: "OK"
-        // if(response.status === 200) {
-        //     // toast.success("Mail Sent Successfully.");
-        //     // window.location.reload(true);
-        // };
     };
 
     const validateEmail = (from_name) => {
