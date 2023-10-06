@@ -89,18 +89,6 @@ const Contact = () => {
                 console.error("Error:", error);
             };
         };
-    
-        // const response = await 
-        //     emailjs.sendForm('service_nfrbso7', 'template_iibs2w9', form.current, 'aDTigHfI0x66h_Nve')
-        //         .then((result) => {
-        //             console.log("---->",result);
-        //             e.target.reset();
-        //             return result;
-        //         }, (error) => {
-        //             toast.error("Mail didot sent.");
-        //             console.log("error",error);
-        //             console.log("error.text",error.text);
-        //         });
     };
 
     const validateEmail = (from_name) => {
