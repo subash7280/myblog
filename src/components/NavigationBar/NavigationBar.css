@@ -16,8 +16,8 @@
 .logo {
   object-fit: fill;
   height: 4.6rem;
+  width: 3.8rem;
   margin: 0 0.8rem;
-  width: 4rem;
 }
 
 .desktopMenuListItem {
@@ -88,6 +88,12 @@
   padding: 0.5rem 3rem;
   margin: 0.25rem;
   background: rgb(30, 30, 30);
+}
+
+@media only screen and (max-width:1023.98px) {
+  .navbar {
+    display: none;
+  }
 }
 
 @media screen  and (max-width:720px) {

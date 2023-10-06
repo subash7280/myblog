@@ -84,6 +84,12 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+@media only screen and (max-width:1023.98px) {
+    #skills {
+        display: none;
+    }
+}
+
 @media screen and (max-width:720px) {
     .skillBarText>p {
         font-size: 2vw;

@@ -5,12 +5,14 @@ import Extras from "./components/Extras/Extras";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'
+import 'react-toastify/dist/ReactToastify.css';
+import MobileContent from "./components/MobileResponsiveContent/MobileContent";
 
 const App = () => {
   
   return (
     <div className="App">
+      <MobileContent />
       <NavigationBar />
       <HomePage />
       <About />

@@ -77,6 +77,12 @@
     height: 1rem;
 }
 
+@media only screen and (max-width:1023.98px) {
+    #homepage {
+        display: none;
+    }
+}
+
 @media screen and (max-width:840px) {
     .bg {
         right: -10vw;

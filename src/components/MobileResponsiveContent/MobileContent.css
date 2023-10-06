@@ -1,0 +1,11 @@
+.mobileView h1 {
+    color: antiquewhite;
+    align-content: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width:1023.5px) {
+    .mobileView {
+        display: none;
+    }
+}
