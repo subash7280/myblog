@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import FaceBookIcon from '../../assets/facebook-icon.png';
 import InstaGramIcon from '../../assets/instagram.png';
-import TwitterIcon from '../../assets/twitter.png';
+import TwitterIcon from '../../assets/twitter.jpg';
 import LinkedInIcon from '../../assets/linkedin.png';
 import GitHubIcon from '../../assets/github.png';
 import { toast } from 'react-toastify';
@@ -15,7 +15,6 @@ const Contact = () => {
         from_name : '',
         message : '',
     });
-    // console.log(formData);]
 
     // Handle input changes
     const onChange = (event) => {
@@ -110,19 +109,19 @@ const Contact = () => {
                 </form>
 
                 <div className="links">
-                    <a href="" target='blank' >
+                    <a href="https://m.facebook.com/profile.php/?id=100024948938075&name=xhp_nt__fb__action__open_user" target='blank' >
                         <img src={FaceBookIcon} alt="FaceBook" className="link" />
                     </a>
-                    <a href="" target='blank' >
+                    <a href="https://instagram.com/subashhh10?igshid=NzZhOTFlYzFmZQ==" target='blank' >
                         <img src={InstaGramIcon} alt="InstaGram" className="link" />
                     </a>
-                    <a href="" target='blank' >
+                    <a href="https://x.com/imsubash10?t=gLfvnC2hrvgWWjcdC5zKaw&s=08" target='blank' >
                         <img src={TwitterIcon} alt="Twitter" className="link" />
                     </a>
-                    <a href="" target='blank' >
+                    <a href="https://www.linkedin.com/in/subash-eswaramoorthi-49018927a" target='blank' >
                         <img src={LinkedInIcon} alt="LinkedIn" className="link" />
                     </a>
-                    <a href="" target='blank' >
+                    <a href="https://github.com/subash7280" target='blank' >
                         <img src={GitHubIcon} alt="GitHub" className="link" />
                     </a>
                 </div>

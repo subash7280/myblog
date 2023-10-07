@@ -71,6 +71,7 @@
     object-fit: cover;
     /* margin-top: 0 2rem; */
     margin: 0 1rem;
+    border-radius: 58% 42% 44% 56% / 41% 34% 66% 59%  
 }
 
 /* .cursor-none {

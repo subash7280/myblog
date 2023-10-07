@@ -41,11 +41,12 @@
 
 .webSight {
     color: red;
+    cursor: pointer;
 }
 
-.webSight:hover {
+/* .webSight:hover {
     color: rgb(0, 38, 255);
-}
+} */
 
 .introPara {
     font-size: 30px;
@@ -83,7 +84,7 @@
     }
 }
 
-@media screen and (max-width:840px) {
+/* @media screen and (max-width:840px) {
     .bg {
         right: -10vw;
     }
@@ -99,4 +100,4 @@
     .bg {
         right: -20vw;
     }
-}
+} */

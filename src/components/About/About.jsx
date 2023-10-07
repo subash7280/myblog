@@ -42,7 +42,7 @@ const Skills = () => {
           <div className="skillBar">
             <img src={schoolLogo} className='instituteLogo' alt="" />
             <div className="skillBarText">
-              <h4 className='yearPassed' >2018 - 2019​ </h4>
+              <h4 className='yearPassed' >2018 - 2019</h4>
               <h4 className='instituteName' >KONGU VELLALAR MATRIC HIGHER SECONDARY SCHOOL</h4>
               <p className='degreeName' >HSC - 68.8%</p>
               <p className='locationName' >Tirupur, India.</p>
