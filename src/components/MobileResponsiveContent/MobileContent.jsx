@@ -4,8 +4,8 @@ import './MobileContent.css';
 const MobileContent = () => {
     return (
       <div id="mobileMsg">
-        <h1 class="heading" data-target-resolver></h1>
-        <h2 class="btn-shine">Visit the site on a Desktop</h2>
+        <h1 className="heading" data-target-resolver></h1>
+        <h2 className="btn-shine">Visit the site on a Desktop</h2>
       </div>
     );
 };
@@ -30,7 +30,6 @@ const resolver = {
 
     function doRandomiserEffect(options, callback) {
       const characters = options.characters;
-      const timeout = options.timeout;
       const element = options.element;
       const partialString = options.partialString;
 
@@ -61,7 +60,6 @@ const resolver = {
 
     function doResolverEffect(options, callback) {
       const resolveString = options.resolveString;
-      const characters = options.characters;
       const offset = options.offset;
       const partialString = resolveString.substring(0, offset);
       const combinedOptions = Object.assign({}, options, {
