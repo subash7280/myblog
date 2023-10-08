@@ -1,14 +1,10 @@
-.mobileView h1 {
-    color: antiquewhite;
-    align-content: center;
-    justify-content: center;
+@media (min-width: 1000px) {
+    #mobileMsg {
+        display: none ;
+    }
 }
 
 @media (max-width: 1000px) {
-    #portfolioBody {
-        display: none;
-    }
-
     body {
         background: rgb(7, 7, 7);
         font-family: 'Poppins',
