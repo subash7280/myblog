@@ -15,7 +15,7 @@ const NavigationBar = () => {
         </div>
         <div className="desktopMenu">
             <Link activeClass='active' to='homepage' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Home</Link>
-            <Link activeClass='active' to='about' spy={true} smooth={true} offset={-40} duration={500} className="desktopMenuListItem">About</Link>
+            <Link activeClass='active' to='about' spy={true} smooth={true} offset={-20} duration={500} className="desktopMenuListItem">About</Link>
             <Link activeClass='active' to='works' spy={true} smooth={true} offset={-60} duration={500} className="desktopMenuListItem">Extras</Link>
             <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-60} duration={500} className="desktopMenuListItem">Skills</Link>
             <Link activeClass='active' to='contact' spy={true} smooth={true} offset={-155} duration={500} className="desktopMenuListItem">Contact</Link>

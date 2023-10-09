@@ -1,6 +1,4 @@
 import React from 'react';
-// import background from '../../assets/myimg1.png';
-// import background from '../../assets/myimg2.png';
 import background from '../../assets/myimg3.png';
 import { Link } from 'react-scroll';
 import btnImg from '../../assets/hireme.png';
@@ -16,7 +14,7 @@ const HomePage = () => {
             <h2 className="introPara2">Now, Come have a <span className='webSight' >Web-Sight</span></h2>
             <Link><abbr title="Not Yet Fired"><button className="btn" disabled ><img src={btnImg} alt="" className='btnImg' />My Resume</button></abbr></Link>
         </div>
-        <div>
+        <div className='bgImage' >
           <img src={background} alt="Profile Image" className="bg" />
         </div>
     </div>

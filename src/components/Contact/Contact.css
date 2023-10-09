@@ -16,10 +16,10 @@
     justify-content: center;
     height: 60vh;
     max-height: max-content;
-    /* background-color: rgb(126, 86, 86); */
 }
 
 .contactDesc {
+    /* background-color: rgb(126, 86, 86); */
     padding: 1rem;
     font-size: medium;
     font-weight: 300;
