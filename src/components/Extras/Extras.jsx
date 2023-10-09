@@ -56,7 +56,7 @@ const Extras = () => {
                     </div>
                 </div>
             </div>
-            <abbr title="Under working phase"><button disabled className="seeMoreBtn">See More</button></abbr>
+            {/* <abbr title="Under working phase"><button disabled className="seeMoreBtn">See More</button></abbr> */}
         </section>
     );
 };

@@ -1,5 +1,6 @@
 .footer {
     background-color: rgb(40, 40, 40);
+    color: white;
     width: 100vw;
     height: 4rem;
     display: flex;
@@ -7,6 +8,8 @@
     justify-content: center;
     font-weight: 300;
     font-size: medium;
+    position: relative;
+    top: 5rem;
 }
 
 @media only screen and (max-width:1023.98px) {

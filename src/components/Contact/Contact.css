@@ -1,6 +1,7 @@
 .contactPage {
+    position: relative;
     height: calc(100vh - 4rem);
-    /* margin-bottom: 0rem; */
+    top: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,15 +41,20 @@
     max-width: 40rem;
     margin: 0.5rem;
     padding: 0.5rem 1rem;
-    color: rgb(251, 251, 251);
-    border: none;
+    /* color: rgb(251, 251, 251); */
     border-radius: 0.5rem;
-    background: rgb(40, 40, 40);
+    background: rgb(230, 235, 236);
+    border: 2px solid black;
+    box-shadow: 10rem;
+}
+
+.email {
+    text-transform: lowercase;
 }
 
 .submitBtn {
     background: white;
-    border: none;
+    /* border: 1px solid rebeccapurple; */
     border-radius: 0.5rem;
     padding: 0.75rem 3.5rem;
     cursor: pointer;
@@ -73,10 +79,6 @@
     margin: 0 1rem;
     border-radius: 58% 42% 44% 56% / 41% 34% 66% 59%  
 }
-
-/* .cursor-none {
-    cursor: none;
-} */
 
 @media only screen and (max-width:1023.98px) {
     .contactPage {

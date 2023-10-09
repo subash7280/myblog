@@ -6,27 +6,10 @@ import './About.css';
 const Skills = () => {
   
   return (
-    <section id='skills'>
+    <section id='about'>
       <span className='skillTitle' >What I Am?</span>
       <br />
       <span className='skillDesc' >A dedicated and hardworking professional with a solid foundation in Computer Science and Engineering. I bring a strong work ethic, adaptability, and a commitment to ongoing learning to my role, all geared towards contributing to my company's success.</span>
-
-      {/* <br /><br /> */}
-      {/* <div className='knowledge' >
-          <span className='skillTitle' >What I Learned?</span>
-          <br />
-          <span className='skillDesc' >
-              <p>HTML-5</p>
-              <p>CSS-3</p>
-              <p>JavaScript</p>
-              <p>React.Js</p>
-              <p>Node.Js</p>
-              <p>Next.Js</p>
-              <p>MySql</p>
-              <p>Java</p>
-          </span>
-      </div> */}
-      {/* <br /> */}
 
       <div className='skillBars' >
         <span className='educationTitle' >What's My Education?</span>

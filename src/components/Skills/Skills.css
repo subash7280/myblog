@@ -1,0 +1,95 @@
+.container {
+    min-height: calc(100vh - 4rem);
+    text-align: center;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    top: 6rem;
+    bottom: 0;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+    gap: 12px;
+  }
+  
+  .title {
+    font-size: 42px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #333; /* Add your text color */
+  }
+  
+  .desc {
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+    color: #666; /* Add your text color */
+  }
+  
+  .skills-container {
+    width: auto;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 30px;
+    justify-content: center;
+    /* background-color: rgb(228, 153, 153); */
+  }
+  
+  .skill {
+    width: 100%;
+    max-width: 500px;
+    background: #fff; /* Add your background color */
+    border: 0.1px solid #854CE6;
+    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+    border-radius: 16px;
+    padding: 18px 36px;
+  }
+  
+  .skill-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #666; /* Add your text color */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .skill-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .skill-item {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666; /* Add your text color */
+    border: 1px solid #666; /* Add your border color */
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .skill-image {
+    width: 24px;
+    height: 24px;
+  }
+  

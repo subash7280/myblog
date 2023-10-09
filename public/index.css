@@ -8,15 +8,8 @@
 }
 
 body {
-    /* ! */ /* background: rgb(30, 30, 30); */
-    background: rgb(75, 80, 82);
-    color: white;
+    background: rgba(234, 237, 237, 0.593);
+    /* color: white; */
     overflow: hidden;
     overflow-y: scroll;
 }
-
-/* @media only screen and (max-width:1270px) {
-    #root {
-        display: none;
-    }
-} */
