@@ -11,56 +11,62 @@ import './Contact.css';
 const Contact = () => {
     const form = useRef();
     const [formData, setFormData] = useState({
-        your_name : '',
-        from_name : '',
-        message : '',
+        your_name: '',
+        from_name: '',
+        message: '',
     });
+
+    const validateEmail = (from_name) => {
+        const regex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
+        return regex?.test(from_name);
+    };
 
     // Handle input changes
     const onChange = (event) => {
         setFormData((prevState) => ({
             ...prevState,
-            [event.target.name] : event.target.value,
+            [event.target.name]: event?.target?.value,
         }));
     };
 
     const sendEmail = async (e) => {
-        e.preventDefault();
+        e?.preventDefault();
+
         const { your_name, from_name, message } = formData;
         let ifWrong = false;
 
-        if(!your_name && !from_name && !message) {
+        if (!your_name && !from_name && !message) {
             toast.error("Give the valid details.");
             return ifWrong = true;
         }
         else {
-            if(!your_name) {
+            if (!your_name) {
                 toast.error("Name Is Required.");
                 return ifWrong = true;
             }
-            else if(your_name.length < 5) {
+            else if (your_name.length < 5) {
                 toast.error("Name Should Be Minimum Of 5 Letters.");
                 return ifWrong = true;
             }
-            else if(!from_name) {
+            else if (!from_name) {
                 toast.error("Email is required.");
                 return ifWrong = true;
             }
-            else if(!validateEmail(from_name)) {
+            else if (!validateEmail(from_name)) {
                 toast.error("Invalid Email Format.");
                 return ifWrong = true;
             }
-            else if(!message) {
+            else if (!message) {
                 toast.error("Message is required.");
                 return ifWrong = true;
             }
-            else if(message.length < 10) {
+            else if (message.length < 10) {
                 toast.error("Message Length Is Not Enough.");
                 return ifWrong = true;
             };
         };
 
-        if(!ifWrong) {
+        if (!ifWrong) {
             try {
                 const response = await emailjs.sendForm(
                     'service_nfrbso7',
@@ -68,15 +74,16 @@ const Contact = () => {
                     form.current,
                     'aDTigHfI0x66h_Nve'
                 );
-                console.log("----->", response);
-    
-                if (response.status === 200) {
+                // console.log("----->", response);
+
+                if (response?.status === 200) {
                     toast.success("Mail Sent.");
-                    e.target.reset();
+                    e?.target?.reset();
+
                     setFormData({
-                        your_name : '',
-                        from_name : '',
-                        message : '',
+                        your_name: '',
+                        from_name: '',
+                        message: '',
                     });
                 }
                 else {
@@ -85,14 +92,9 @@ const Contact = () => {
             }
             catch (error) {
                 toast.error("Mail did not sentttt.");
-                console.error("Error:", error);
+                // console.error("Error:", error);
             };
         };
-    };
-
-    const validateEmail = (from_name) => {
-        const regex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}$/;
-        return regex.test(from_name);
     };
 
     return (
@@ -100,9 +102,9 @@ const Contact = () => {
             <div id="contact">
                 <h1 className="contactPageTitle">Contact Me</h1>
                 <span className="contactDesc">I appreciate your swift response. Feel free to contact me.</span>
-                
+
                 <form action="" className="contactForm" ref={form} onSubmit={sendEmail} >
-                    <input type="text" className="name" placeholder='Your Name' value={formData.your_name} name='your_name' onChange={onChange}  />
+                    <input type="text" className="name" placeholder='Your Name' value={formData.your_name} name='your_name' onChange={onChange} />
                     <input type="text" className="email" placeholder='Your Email' value={formData.from_name} name='from_name' onChange={onChange} />
                     <textarea name='message' className="msg" rows="5" placeholder='Your Message' value={formData.message} onChange={onChange} ></textarea>
                     <button id='submitBtn' type='submit' value='Send' className="submitBtn" >Submit</button>
@@ -112,7 +114,7 @@ const Contact = () => {
                     <a href="https://m.facebook.com/profile.php/?id=100024948938075&name=xhp_nt__fb__action__open_user" target='blank' >
                         <img src={FaceBookIcon} alt="FaceBook" className="link" />
                     </a>
-                    <a href="https://instagram.com/subashhh10?igshid=NzZhOTFlYzFmZQ==" target='blank' >
+                    <a href="https://www.instagram.com/subash.eswaramoorthi/?igshid=NzZhOTFlYzFmZQ%3D%3D" target='blank' >
                         <img src={InstaGramIcon} alt="InstaGram" className="link" />
                     </a>
                     <a href="https://x.com/imsubash10?t=gLfvnC2hrvgWWjcdC5zKaw&s=08" target='blank' >

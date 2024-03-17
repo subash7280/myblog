@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import MobileContent from "./components/MobileResponsiveContent/MobileContent";
 
 const App = () => {
-  
+
   return (
     <div className="App">
       <MobileContent />
@@ -25,4 +25,5 @@ const App = () => {
     </div>
   );
 };
+
 export default App;
