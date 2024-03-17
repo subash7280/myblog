@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import './MobileContent.css';
 
 const MobileContent = () => {
+
   useEffect(() => {
     const resolver = {
       resolve: function resolve(options, callback) {
@@ -18,7 +19,7 @@ const MobileContent = () => {
         }
 
         function randomCharacter(characters) {
-          return characters[getRandomInteger(0, characters.length - 1)];
+          return characters[getRandomInteger(0, characters?.length - 1)];
         }
 
         function doRandomiserEffect(options, callback) {
@@ -40,7 +41,7 @@ const MobileContent = () => {
               } else {
                 // Replaces the last character of partialString with a random character
                 element.textContent =
-                  partialString.substring(0, partialString.length - 1) +
+                  partialString?.substring(0, partialString?.length - 1) +
                   randomCharacter(characters);
               }
 
@@ -49,12 +50,12 @@ const MobileContent = () => {
               callback();
             }
           }, options.timeout);
-        }
+        };
 
         function doResolverEffect(options, callback) {
           const resolveString = options.resolveString;
           const offset = options.offset;
-          const partialString = resolveString.substring(0, offset);
+          const partialString = resolveString?.substring(0, offset);
           const combinedOptions = Object.assign({}, options, {
             partialString: partialString,
           });
@@ -143,25 +144,27 @@ const MobileContent = () => {
       setTimeout(() => {
         counter++;
 
-        if (counter >= strings.length) {
+        if (counter >= strings?.length) {
           counter = 0;
-        }
+        };
 
         let nextOptions = Object.assign({}, options, {
           resolveString: strings[counter],
         });
+
         resolver.resolve(nextOptions, callback);
       }, 1000);
-    }
+    };
 
     resolver.resolve(options, callback);
   }, []);
 
-    return (
-      <div id="mobileMsg">
-        <h1 className="heading" data-target-resolver></h1>
-        <h2 className="btn-shine">Visit the site on a Desktop</h2>
-      </div>
-    );
+  return (
+    <div id="mobileMsg">
+      <h1 className="heading" data-target-resolver></h1>
+      <h2 className="btn-shine">Visit the site on a Desktop</h2>
+    </div>
+  );
 };
+
 export default MobileContent;

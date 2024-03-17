@@ -3,17 +3,19 @@
     min-height: calc(100vh - 4rem);
     width: 100vw;
     max-width: 60rem;
-    display: flex;   
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 1rem;    /* Top,Bottom  Left,Right */
+    padding: 0 1rem;
+    /* Top,Bottom  Left,Right */
     /* background-color: antiquewhite; */
 }
 
 .worksTitle {
-    margin: 1rem 0;    /* Top,Bottom  Left,Right */
+    margin: 1rem 0;
+    /* Top,Bottom  Left,Right */
     font-size: 2.2rem;
     /* color: rgb(194, 235, 235); */
 }
@@ -25,6 +27,7 @@
     text-align: justify;
     margin: 0.7rem 0 0 0;
 }
+
 .work2Desc {
     font-weight: 400;
     font-size: 1rem;
@@ -32,6 +35,7 @@
     text-align: justify;
     margin: 0.7rem 2rem 0 0;
 }
+
 .work3Desc {
     font-weight: 400;
     font-size: 1rem;
@@ -39,6 +43,7 @@
     text-align: justify;
     margin: 0.7rem 0 0 0;
 }
+
 .work4Desc {
     font-weight: 400;
     font-size: 1rem;
@@ -77,16 +82,19 @@
     flex-direction: row;
     /* background-color: rgb(169, 170, 171); */
 }
+
 .work2 {
     display: flex;
     flex-direction: row;
     /* background-color: rgb(151, 152, 153); */
 }
+
 .work3 {
     display: flex;
     flex-direction: row;
     /* background-color: rgb(109, 110, 111); */
 }
+
 .work4 {
     display: flex;
     flex-direction: row;

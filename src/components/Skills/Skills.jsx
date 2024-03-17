@@ -1,7 +1,7 @@
 import React from 'react';
 import './Skills.css';
 
-import {skills} from '../../data/constants.js'; // Corrected import
+import { skills } from '../../data/constants.js'; // Corrected import
 
 const Skills = () => {
   return (
@@ -13,14 +13,14 @@ const Skills = () => {
             Here are some of my skills on which I have been working on for the past few months.
           </div>
           <div className="skills-container">
-            {skills.map((skill) => (
-              <div className="skill" key={skill.title}>
-                <h2 className="skill-title">{skill.title}</h2>
+            {skills?.map((skill) => (
+              <div className="skill" key={skill?.title}>
+                <h2 className="skill-title">{skill?.title}</h2>
                 <div className="skill-list">
-                  {skill.skills.map((item) => (
-                    <div className="skill-item" key={item.name}>
-                      <img src={item.image} alt={item.name} className="skill-image" />
-                      {item.name}
+                  {skill?.skills?.map((item) => (
+                    <div className="skill-item" key={item?.name}>
+                      <img src={item?.image} alt={item?.name} className="skill-image" />
+                      {item?.name}
                     </div>
                   ))}
                 </div>
