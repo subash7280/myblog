@@ -105,18 +105,15 @@ export function AboutSection() {
             )}>
               <div className="space-y-6">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  {"Hello! I'm Subash Eswaramoorthi, a passionate developer who loves creating things that live on the internet."}
-                  {" My journey in web development began in 2023 when I decided to try customizing themes"}
-                  {" and discovered the joy of bringing ideas to life through code."}
+                  Hello! As you’ve probably seen my name above, I’m a passionate developer who loves creating things that live on the internet. My journey in web development began in 2023, starting with small experiments and gradually growing into building complete applications end-to-end from backend APIs to responsive frontends. Along the way, I discovered the joy of bringing ideas to life through code.
                 </p>
+
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  {"Fast-forward to today, and I've had the privilege of working with startups,"}
-                  {" agencies, and large corporations. My focus is on building accessible, inclusive"}
-                  {" products and digital experiences that users love."}
+                  Fast-forward to today, I enjoy working on real-world problems, learning the latest updates in my tech stack, and continuously improving how I write and structure code. I’m currently exploring scalable architectures, performance optimization, and product-focused development, while also building personal projects.
                 </p>
+
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  {"When I'm not at the computer, you'll find me exploring new places,"}
-                  {" reading about technology, or working on personal projects."}
+                  When I’m not at the computer, you’ll find me reading about technology, working on side projects or binge-watching Instagram.
                 </p>
               </div>
 

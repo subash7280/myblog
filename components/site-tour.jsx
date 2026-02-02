@@ -46,7 +46,7 @@ export function SiteTour() {
 
   useEffect(() => {
     const seen = localStorage.getItem("portfolio-tour-seen")
-    if (!seen) {
+    if (!seen && false) {
       setHasSeenTour(false)
       const timer = setTimeout(() => {
         setIsOpen(true)
