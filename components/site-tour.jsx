@@ -80,7 +80,7 @@ export function SiteTour() {
     setIsOpen(true)
   }, [])
 
-  if (hasSeenTour && !isOpen) {
+  if (false && hasSeenTour && !isOpen) {
     return (
       <button
         onClick={restartTour}
@@ -103,7 +103,7 @@ export function SiteTour() {
   return (
     <>
       {/* Backdrop */}
-      <div 
+      <div
         className="fixed inset-0 z-[100] bg-background/80 backdrop-blur-sm animate-in fade-in duration-300"
         onClick={closeTour}
       />
@@ -154,10 +154,10 @@ export function SiteTour() {
                   onClick={() => setCurrentStep(index)}
                   className={cn(
                     "w-2 h-2 rounded-full transition-all duration-300",
-                    index === currentStep 
-                      ? "w-6 bg-primary" 
-                      : index < currentStep 
-                        ? "bg-primary/50" 
+                    index === currentStep
+                      ? "w-6 bg-primary"
+                      : index < currentStep
+                        ? "bg-primary/50"
                         : "bg-border"
                   )}
                   aria-label={`Go to step ${index + 1}`}
@@ -172,8 +172,8 @@ export function SiteTour() {
                 disabled={currentStep === 0}
                 className={cn(
                   "flex items-center gap-2 px-4 py-2 text-sm font-medium rounded-full transition-all duration-300",
-                  currentStep === 0 
-                    ? "text-muted-foreground/50 cursor-not-allowed" 
+                  currentStep === 0
+                    ? "text-muted-foreground/50 cursor-not-allowed"
                     : "text-foreground hover:bg-secondary"
                 )}
               >
