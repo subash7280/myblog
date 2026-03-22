@@ -4,7 +4,7 @@ import { Github, Linkedin, Twitter, Mail, Heart, ArrowUp, Instagram } from "luci
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/subash7280", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/subash-eswaramoorthi-49018927a", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/subash-eswaramoorthi", label: "LinkedIn" },
   { icon: Instagram, href: "https://www.instagram.com/subash.eswaramoorthi/?igshid=NzZhOTFlYzFmZQ%3D%3D", label: "Instagram" },
   { icon: Mail, href: "mailto:subasheswaramoorthi143@gmail.com", label: "Email" },
 ]
